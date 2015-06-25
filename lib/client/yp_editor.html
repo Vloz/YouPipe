@@ -1,0 +1,33 @@
+<link rel="import" href="../../../packages/polymer/polymer.html">
+<polymer-element name="yp-editor">
+    <template>
+        <link rel="stylesheet" href="../../../packages/comid/codemirror.css">
+        <link rel="stylesheet" href="../../../packages/comid/theme/vibrant-ink.css">
+        <style>
+            .CodeMirror{
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: auto;
+            }
+        </style>
+        <div fit horizontal layout>
+            <div style="width: 300px; background-color: #A1887F">
+                <core-selector id="file-tree" on-core-activate="{{changeDisplayedSource}}">
+                    <template repeat="{{source in sources}}">
+                        <paper-item label="{{source.fullPath}}">
+                            {{source.fullPath}}
+                        </paper-item>
+                    </template>
+                </core-selector>
+            </div>
+            <div style="background: gray;" relative flex>
+                <div fit style="z-index: 1" hidden?="{{currentFileOpen == ''}}" id="code"></div>
+            </div>
+        </div>
+        <div style="height: 48px; background-color: #3E2723; color: white"></div>
+    </template>
+    <script type="application/dart" src="yp_editor.dart"></script>
+</polymer-element>

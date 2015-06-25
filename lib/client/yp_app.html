@@ -1,0 +1,87 @@
+<link rel="import" href="../../../packages/polymer/polymer.html">
+
+<link rel="import" href="../../../packages/core_elements/core_drawer_panel.html">
+<link rel="import" href="../../../packages/core_elements/core_header_panel.html">
+<link rel="import" href="../../../packages/core_elements/core_toolbar.html">
+<link rel="import" href="../../../packages/paper_elements/paper_input.html">
+<link rel="import" href="../../../packages/paper_elements/paper_button.html">
+<link rel="import" href="../../../packages/paper_elements/paper_menu_button.html">
+<link rel="import" href="../../../packages/paper_elements/paper_icon_button.html">
+<link rel="import" href="../../../packages/core_elements/core_menu.html">
+<link rel="import" href="../../../packages/core_elements/core_selector.html">
+<link rel="import" href="../../../packages/paper_elements/paper_item.html">
+<link rel="import" href="../../../packages/paper_elements/paper_dropdown.html">
+<link rel="import" href="../../../packages/core_elements/core_icon.html">
+<link rel="import" href="../../../packages/core_elements/core_field.html">
+<link rel="import" href="../../../packages/core_elements/social_icons.html">
+<link rel="import" href="../../../packages/core_elements/core_pages.html">
+<link rel="import" href="yp_app_list.html">
+<link rel="import" href="yp_app_pipe.html">
+
+<polymer-element name="yp-app">
+    <template>
+        <core-style id="paper-input-decorator">
+            .unfocused-underline {
+            background-color: #EFEBE9;
+            }
+            .focused-underline {
+            background-color: #F50057;
+            }
+            :host([focused]) .floated-label .label-text {
+            color: #F50057;
+            }
+        </core-style>
+        <core-drawer-panel forceNarrow="true">
+            <div style="background-color: white" drawer>
+                <img src="res/logo.svg" style="width: 168px; padding: 15px 36px">
+                <core-selector id="main-menu" excludedLocalNames="div hr">
+                    <template repeat="{{mi in menuItems.getRange(0,3)}}">
+                        <paper-item class="menuItem" ><a href="#new-pipe" layout horizontal center><core-icon icon="{{mi.icon}}"></core-icon>[[ mi.nameID | i18n ]]</a></paper-item>
+                    </template>
+                    <hr>
+                    <template if="{{user!=null}}">
+                        <div id="nameHeader">
+                            <br/>
+                            <span style="color: black; opacity: 0.54; font-size: 13px">{{user.nick}}</span>
+                        </div>
+                        <hr>
+                        <template repeat="{{mi in menuItems.getRange(3,8)}}">
+                            <paper-item class="menuItem"><core-icon icon="{{mi.icon}}"></core-icon>[[ mi.nameID | i18n ]]</paper-item>
+                        </template>
+                    </template>
+                    <paper-item on-click="{{onSignoutClick}}" class="menuItem" hidden?="{{user==null}}"><core-icon icon="settings-power"></core-icon>[[ 10 | i18n ]]</paper-item>
+                    <paper-item id="signinmenuitem" class="SigninItem" hidden?="{{user!=null}}"><img src="res/plus_icon.svg">[[ 4 | i18n ]]</paper-item>
+                </core-selector>
+            </div>
+            <core-header-panel mode="waterfall" main fit>
+                <core-toolbar>
+                    <img src="res/white_logo.svg" style="width: 120px" core-drawer-toggle>
+                    <div flex horizontal center-justified layout>
+                        <core-field style="max-width:800px; color: #EFEBE9;" flex>
+                            <core-icon icon="search"></core-icon>
+                            <paper-input flex></paper-input>
+                        </core-field>
+                    </div>
+                    <template if="{{user==null}}">
+                        <paper-button id="signin-header-but" class="colored"><img src="res/plus_icon.svg">[[ 11 | i18n ]]</paper-button>
+                    </template>
+                    <template if="{{user!=null}}">
+                        <a href="#new"><paper-icon-button icon="add-box"></paper-icon-button></a>
+                        <paper-icon-button icon="social:notifications-none"></paper-icon-button>
+                        <paper-icon-button id="profilebut" _src="{{user.picture}}?sz=38" noink></paper-icon-button>
+                    </template>
+
+                </core-toolbar>
+
+                <core-pages id="body-pages" valueattr="label">>
+                    <yp-app-list label="list">
+                    </yp-app-list>
+                    <yp-app-pipe id="pipe-page" label="pipe">
+                    </yp-app-pipe>
+                </core-pages>
+            </core-header-panel>
+
+        </core-drawer-panel>
+    </template>
+    <script type="application/dart" src="yp_app.dart"></script>
+</polymer-element>

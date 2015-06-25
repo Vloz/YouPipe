@@ -1,0 +1,45 @@
+version: 1
+runtime: custom
+vm: true
+api_version: 1
+threadsafe: true
+
+manual_scaling:
+  instances: 1
+
+#env_variables:
+#  DBG_ENABLE: 'true'
+#  DBG_PORT: '4242'
+# disable health-checking because this is so annoying during debugging
+vm_health_check:
+  enable_health_check: False
+
+handlers:
+- url: /_ah/spi/.*
+  script: bin/server.dart
+
+- url: /dev/(.*)packages
+  static_dir: web/packages/
+
+- url: /dev/(.*)res
+  static_dir: web/res/
+
+- url: /packages
+  static_dir: web/packages/
+
+- url: /res
+  static_dir: web/res/
+
+- url: /locales
+  static_dir: web/locales/
+
+- url: /dev/
+  static_files: web/main.html
+  upload: /main.html
+
+- url: /dev/main.dart
+  static_files: web/main.dart
+  upload: /main.dart
+
+- url: .*
+  script: bin/server.dart

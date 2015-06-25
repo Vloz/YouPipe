@@ -1,0 +1,154 @@
+<link rel="import" href="../../../packages/polymer/polymer.html">
+<link rel="import" href="../../../packages/core_elements/core_field.html">
+<link rel="import" href="../../../packages/paper_elements/paper_tabs.html">
+<link rel="import" href="../../../packages/paper_elements/paper_tab.html">
+<link rel="import" href="../../../packages/paper_elements/paper_radio_group.html">
+<link rel="import" href="../../../packages/paper_elements/paper_radio_button.html">
+<link rel="import" href="../../../packages/paper_elements/paper_checkbox.html">
+<link rel="import" href="../../../packages/paper_elements/paper_dropdown_menu.html">
+<link rel="import" href="../../../packages/paper_elements/paper_fab.html">
+<link rel="import" href="../../../packages/core_elements/av_icons.html">
+<link rel="import" href="yp_editor.html">
+<polymer-element name="yp-app-pipe">
+    <template>
+        <div center-justified horizontal layout>
+            <div id="main-pan" vertical layout>
+                <paper-shadow id="player" relative>
+                    <paper-fab id="play-but" icon="av:play-arrow" style="{{(pmode=='dev')?'right:2%;':'right:50%'}}"></paper-fab>
+                    <div id="overlay-buttons-group">
+                        <template if="{{pmode!='dev'}}">
+                            <paper-button on-click="{{EditSourceCode_click}}">Edit source code</paper-button>
+                        </template>
+                        <template if="{{pmode!='pic'}}">
+                            <paper-button  on-click="{{ShowPipePicture_click}}">Show pipe picture</paper-button>
+                        </template>
+                        <template if="{{pmode!='out'}}">
+                            <paper-button  on-click="{{ShowPipeOutput_click}}">Show pipe output</paper-button>
+                        </template>
+                    </div>
+                    <div id="player-top" relative>
+                        <div hidden?="{{pmode!='pic'}}" id="picture" fit>
+                        </div>
+                        <template if="{{loadEditor}}">
+                            <div hidden?="{{pmode!='dev'}}" id="dev-mode" fit>
+                                <yp-editor sources="{{sources}}"></yp-editor>
+                            </div>
+                        </template>
+                    </div>
+                    <div id="pipe-controls" style="background-color: #3E2723" horizontal layout>
+                        <template if="{{pmode!='dev'}}">
+                            <div class="io-but">
+                                <paper-icon-button icon="file-download"></paper-icon-button>
+                            </div>
+                            <div class="pipe-end" style="background-image: url(/res/p_l.png);">
+
+                            </div>
+                            <div flex horizontal layout center>
+                                <div flex style="background-color: #A1887F; height: 30px">
+
+                                </div>
+                            </div>
+                            <div class="pipe-end" style="background-image: url(/res/p_r.png);">
+
+                            </div>
+                            <div class="io-but">
+                                <paper-icon-button icon="file-upload" ></paper-icon-button>
+                            </div>
+                        </template>
+                    </div>
+                </paper-shadow>
+                <paper-shadow style="background-color: white; padding: 5px 15px 15px 15px">
+                    <div horizontal layout>
+                        <div class="divider">
+                            <h3>Publish as...</h3>
+                            <paper-radio-group selected="new">
+                                <paper-radio-button name="new" label="New Pipe"></paper-radio-button>
+                                <span>Create a whole new pipe with this code</span>
+                                <paper-radio-button name="major" label="Major change"></paper-radio-button>
+                                <span>Could break the compatibility with previous version</span>
+                                <paper-radio-button name="minor" label="Minor change"></paper-radio-button>
+                                <span>Behave as the current major version</span>
+                            </paper-radio-group>
+                        </div>
+                        <div class="divider" style=" width: 350px;">
+                            <paper-input id="form-title" label="Pipe title..." ></paper-input>
+                            <paper-dropdown-menu style="width: 100%"></paper-dropdown-menu>
+                            <div style="text-align: center">
+                                <paper-button>Set picture (optionnal)</paper-button>
+                            </div>
+                            <div relative style="width: 350px; height: 197px; background-color: #A1887F; background-size: 100% 100%; background-image: url('/res/pipe-c.svg')">
+                                <paper-icon-button style="position: absolute; right: 0" icon="clear"></paper-icon-button>
+                            </div>
+                        </div>
+                        <div flex>
+                            <div style="margin-bottom: -5px" horizontal layout>
+                                <paper-checkbox style="padding: 20px"></paper-checkbox><h4>Version available to the public</h4></core-label>
+                            </div>
+                            <paper-input-decorator style="margin: 0 20px" label="Readme... (instructions, changelog, credits...)">
+                                <textarea style="height: 200px"></textarea>
+                            </paper-input-decorator>
+                            <div  style="margin: 0 20px" center horizontal layout>
+                                <div style="opacity: 0.54; font-size: 12px; max-width: 350px ">
+                                    All code are published under CC license.Others members may share your code without restrictions.
+                                </div>
+                                <div flex></div>
+                                <paper-button class="colored">Publish</paper-button>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </paper-shadow>
+                <paper-shadow style="background-color: white">
+                    <div style="padding: 15px 15px 0 15px">
+                        <div horizontal layout>
+                            <div flex>
+                                <div><h1>CROSSED - 21 - Resident Evil</h1><span style="opacity: 0.54;text-justify: 13px;font-size: 14px;vertical-align: top;margin: 0 5px;">Vers. 1</span></div>
+                                <div style="height: 30px;color: #F50057; font-size: 16px; line-height: 2em">
+                                    <img style="float: left;margin: 5px 10px 5px 0; border-radius: 12px" src="https://lh5.googleusercontent.com/-28iXaQfi4i4/AAAAAAAAAAI/AAAAAAAAI0Q/eEMayhIq_Hc/photo.jpg?sz=24">Anthony Bobenrieth<br></div>
+                            </div>
+                            <div style="text-align: right; font-size: 21px; color: #727272; line-height: 1.4em">
+                                457 841
+                                <div style="width: 160px; height: 2px; background-color: #ccc"><div style="width: 100px; height: 2px; background-color: #F50057"></div></div>
+                                <div id="thumb-div">
+                                    <div>
+                                        <paper-icon-button icon="thumb-up"></paper-icon-button>
+                                        <span>457</span>
+                                    </div>
+                                    <div>
+                                        <paper-icon-button icon="thumb-down"></paper-icon-button>
+                                        <span>90</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <core-pages id="pipe-pages" selected="{{selectedTab}}">
+                            <div style="margin: 10px 5px; font-size: 13px">
+                                <div style="font-weight: bold;">Uploaded on Feb 7, 2012</div>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat velit ut vehicula pretium. Aliquam tempor velit risus. Nam fringilla aliquam finibus. Aenean eu lobortis ex. Phasellus ultrices dignissim felis. Nunc sed vehicula justo, sed bibendum metus. Curabitur cursus, elit nec congue porta, orci purus rutrum magna, in suscipit libero risus ut felis. Vivamus vehicula blandit diam, a fringilla odio ultrices ac.
+                            </div>
+                        </core-pages>
+                        <hr>
+                    </div>
+                    <paper-tabs noink selected="{{selectedTab}}">
+                        <paper-tab>README</paper-tab>
+                        <paper-tab>VERSIONS</paper-tab>
+                        <paper-tab>USING</paper-tab>
+                        <paper-tab>USED BY</paper-tab>
+                    </paper-tabs>
+                </paper-shadow>
+
+            </div>
+            <div style="width: 416px;  padding: 5px">
+                <div style="background-color: white; height: 300px">
+
+                </div>
+            </div>
+        </div>
+
+
+    </template>
+    <script type="application/dart" src="yp_app_pipe.dart"></script>
+</polymer-element>

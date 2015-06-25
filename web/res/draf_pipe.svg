@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="297mm"
+   height="210mm"
+   id="svg2985"
+   version="1.1"
+   inkscape:version="0.48.5 r10040"
+   sodipodi:docname="pipe.svg">
+  <defs
+     id="defs2987" />
+  <sodipodi:namedview
+     inkscape:document-units="mm"
+     pagecolor="#ff9800"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="1"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.61399264"
+     inkscape:cx="121.67937"
+     inkscape:cy="322.00216"
+     inkscape:current-layer="layer1"
+     id="namedview2989"
+     showgrid="false"
+     inkscape:window-width="1873"
+     inkscape:window-height="1056"
+     inkscape:window-x="47"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     units="mm" />
+  <metadata
+     id="metadata2991">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="fill:#ffffff;fill-opacity:1;stroke:none"
+       d="m 331.82647,179.06059 c -31.22669,0 -45.0625,58.24959 -45.0625,173.78125 0,115.53166 22.17078,169.875 47.875,169.875 13.24931,0 22.19444,-0.16553 217.90625,-0.21875 171.10225,-0.0465 176.05407,-3.50909 181.96875,-3.84375 41.53299,-2.35001 52.16824,-50.72301 53.9375,-166.65625 1.76926,-115.93323 -10.72917,-168.46507 -58.9375,-170.09375 -11.54434,0 -24.76101,2.73719 -197.34375,1.0625 -170.82282,-1.65761 -191.6263,-3.90625 -200.34375,-3.90625 z m -10.5,17.75 c 13.76383,0 24.91711,67.03008 24.9273,149.96532 0.0102,82.93524 -11.14904,150.12843 -24.9273,150.12843 -13.77826,0 -24.96875,-67.19319 -24.96875,-150.0625 0,-82.86931 11.19049,-150.03125 24.96875,-150.03125 z"
+       id="path3890"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="sssssscssscsss" />
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="271.52588"
+       y="120.3085"
+       id="text3821"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3823"
+         x="271.52588"
+         y="120.3085"
+         style="font-size:72px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;text-anchor:end;fill:#ffffff;fill-opacity:1;font-family:Roboto;-inkscape-font-specification:Roboto">.AVI</tspan><tspan
+         sodipodi:role="line"
+         x="271.52588"
+         y="210.3085"
+         style="font-size:72px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;text-anchor:end;fill:#ffffff;fill-opacity:1;font-family:Roboto;-inkscape-font-specification:Roboto"
+         id="tspan2993">.MP4</tspan><tspan
+         sodipodi:role="line"
+         x="271.52588"
+         y="300.3085"
+         style="font-size:72px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;text-anchor:end;fill:#ffffff;fill-opacity:1;font-family:Roboto;-inkscape-font-specification:Roboto"
+         id="tspan2995">.MPG</tspan><tspan
+         sodipodi:role="line"
+         x="271.52588"
+         y="390.3085"
+         style="font-size:72px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;text-anchor:end;fill:#ffffff;fill-opacity:1;font-family:Roboto;-inkscape-font-specification:Roboto"
+         id="tspan2997">.WAV</tspan><tspan
+         sodipodi:role="line"
+         x="271.52588"
+         y="480.3085"
+         style="font-size:72px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;text-anchor:end;fill:#ffffff;fill-opacity:1;font-family:Roboto;-inkscape-font-specification:Roboto"
+         id="tspan2999">.MP3</tspan><tspan
+         sodipodi:role="line"
+         x="271.52588"
+         y="570.30847"
+         style="font-size:72px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;text-anchor:end;fill:#ffffff;fill-opacity:1;font-family:Roboto;-inkscape-font-specification:Roboto"
+         id="tspan3001">X264</tspan><tspan
+         sodipodi:role="line"
+         x="271.52588"
+         y="660.30847"
+         style="font-size:72px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;text-anchor:end;fill:#ffffff;fill-opacity:1;font-family:Roboto;-inkscape-font-specification:Roboto"
+         id="tspan3003">WEBP</tspan><tspan
+         sodipodi:role="line"
+         x="271.52588"
+         y="750.30847"
+         style="font-size:72px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;text-anchor:end;fill:#ffffff;fill-opacity:1;font-family:Roboto;-inkscape-font-specification:Roboto"
+         id="tspan3005" /></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text3007"
+       y="125.19455"
+       x="815.50635"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       xml:space="preserve"><tspan
+         style="font-size:72px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#ffffff;fill-opacity:1;font-family:Roboto;-inkscape-font-specification:Roboto"
+         y="125.19455"
+         x="815.50635"
+         id="tspan3009"
+         sodipodi:role="line">.AVI</tspan><tspan
+         id="tspan3011"
+         style="font-size:72px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#ffffff;fill-opacity:1;font-family:Roboto;-inkscape-font-specification:Roboto"
+         y="215.19455"
+         x="815.50635"
+         sodipodi:role="line">.MP4</tspan><tspan
+         id="tspan3013"
+         style="font-size:72px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#ffffff;fill-opacity:1;font-family:Roboto;-inkscape-font-specification:Roboto"
+         y="305.19455"
+         x="815.50635"
+         sodipodi:role="line">.MPG</tspan><tspan
+         id="tspan3015"
+         style="font-size:72px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#ffffff;fill-opacity:1;font-family:Roboto;-inkscape-font-specification:Roboto"
+         y="395.19455"
+         x="815.50635"
+         sodipodi:role="line">.WAV</tspan><tspan
+         id="tspan3017"
+         style="font-size:72px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#ffffff;fill-opacity:1;font-family:Roboto;-inkscape-font-specification:Roboto"
+         y="485.19455"
+         x="815.50635"
+         sodipodi:role="line">.MP3</tspan><tspan
+         id="tspan3019"
+         style="font-size:72px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#ffffff;fill-opacity:1;font-family:Roboto;-inkscape-font-specification:Roboto"
+         y="575.19452"
+         x="815.50635"
+         sodipodi:role="line">X264</tspan><tspan
+         id="tspan3021"
+         style="font-size:72px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#ffffff;fill-opacity:1;font-family:Roboto;-inkscape-font-specification:Roboto"
+         y="665.19452"
+         x="815.50635"
+         sodipodi:role="line">WEBP</tspan><tspan
+         id="tspan3023"
+         style="font-size:72px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#ffffff;fill-opacity:1;font-family:Roboto;-inkscape-font-specification:Roboto"
+         y="755.19452"
+         x="815.50635"
+         sodipodi:role="line" /></text>
+    <path
+       style="fill:#000000;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
+       d="m 501.63468,276.66217 0,166.12577 145.95409,-84.26663 z"
+       id="path3027"
+       inkscape:connector-curvature="0" />
+  </g>
+</svg>

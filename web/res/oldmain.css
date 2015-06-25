@@ -1,0 +1,101 @@
+body {
+    font-family: RobotoDraft, sans-serif;
+    color: #333;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-touch-callout: none;
+}
+
+yp-app /deep/ core-toolbar {
+    background-color: #A1887F;
+    color: #EFEBE9;
+}
+
+yp-app /deep/ core-header-panel{
+    background-color: #BCAAA4;
+}
+
+yp-app /deep/ paper-button{
+    color: #F50057;
+    font-size: 14px;
+}
+
+yp-app /deep/ .colored{
+    background-color: #F50057;
+    color: white;
+}
+
+yp-app /deep/ paper-button /deep/ a{
+    text-decoration: none;
+    color: white;
+}
+
+yp-app /deep/ #profilebut {
+    margin-top: 4px;
+}
+
+yp-app /deep/ #profilebut /deep/ core-icon {
+    height: 38px;
+    width: 38px;
+}
+
+yp-app /deep/ #profilebut /deep/ core-icon > div{
+    border-radius: 18px;
+}
+
+yp-app /deep/ #profilemenubut{
+    color: #212121;
+}
+
+yp-app /deep/ .menuItem /deep/ paper-ripple{
+    color: white;
+}
+
+yp-app /deep/ #mainmenu /deep/ core-icon{
+    margin-right: 15px;
+}
+
+yp-app /deep/ #nameHeader{
+    text-align: center;
+}
+
+yp-app /deep/ hr {
+    height: 1px;
+    background-color: #E5E5E5;
+    border: none;
+    margin: 0 15px;
+}
+
+yp-app /deep/ .SigninItem{
+    background-color: #F50057;
+    font-weight: bold;
+    color:white;
+    margin: 10px 0;
+}
+
+yp-app /deep/ .SigninItem > img{
+    width: 32px;
+    padding-right: 10px;
+}
+
+yp-app /deep/ core-selector .core-selected{
+    background-color: #A1887F;
+    color: white;
+    font-weight: bold;
+}
+
+yp-app /deep/ .thumbnailgrid{
+    background-color: #A1887F;
+    height: 158px;
+    width:100%;
+}
+
+yp-app /deep/ .grid-item{
+    width:280px;
+    height:250px;
+    background: white;
+    margin: 10px;
+}

@@ -1,0 +1,199 @@
+yp-app /deep/ .grid-thumbnail {
+  background-color: #A1887F;
+  height: 158px;
+  width: 100%; }
+yp-app /deep/ .grid-item > paper-shadow {
+  width: 280px;
+  height: 250px;
+  background: white;
+  margin: 10px;
+  cursor: pointer; }
+  yp-app /deep/ .grid-item > paper-shadow .title {
+    font-size: 14px;
+    font-weight: bold;
+    color: #F50057; }
+yp-app /deep/ .grid-item > paper-shadow:hover .title {
+  color: #F50057;
+  text-decoration: underline; }
+
+yp-app /deep/ #main-pan > * {
+  margin: 5px; }
+yp-app /deep/ .pan {
+  background-color: white;
+  padding: 5px 15px 15px 15px; }
+yp-app /deep/ #player-top {
+  width: 1280px;
+  height: 720px; }
+yp-app /deep/ #player:hover > #overlay-buttons-group {
+  opacity: 1;
+  z-index: 2; }
+yp-app /deep/ #overlay-buttons-group {
+  opacity: 0;
+  transition-property: opacity;
+  position: absolute;
+  top: 1%;
+  right: 1%; }
+  yp-app /deep/ #overlay-buttons-group > paper-button {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 50px; }
+yp-app /deep/ #picture {
+  background-color: #009688;
+  background-image: url("/res/pipe.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain; }
+yp-app /deep/ #play-but {
+  position: absolute;
+  bottom: 24px;
+  z-index: 2; }
+yp-app /deep/ #pipe-controls {
+  color: white;
+  height: 48px; }
+  yp-app /deep/ #pipe-controls .io-but {
+    font-weight: bold;
+    padding: 4px 5px 0 5px; }
+  yp-app /deep/ #pipe-controls .pipe-end {
+    width: 8px;
+    background-position: center;
+    background-repeat: no-repeat; }
+yp-app /deep/ #thumb-div {
+  font-size: 12px; }
+  yp-app /deep/ #thumb-div /deep/ core-icon {
+    width: 20px;
+    height: 20px; }
+  yp-app /deep/ #thumb-div > * {
+    display: inline-flex;
+    margin: 0 5px;
+    flex-direction: row;
+    align-items: center;
+    opacity: 0.54; }
+yp-app /deep/ paper-tabs /deep/ #selectionBar {
+  background-color: #F50057;
+  bottom: auto; }
+yp-app /deep/ #pipe-pages {
+  height: 100px; }
+yp-app /deep/ paper-radio-group {
+  display: block;
+  width: 200px; }
+  yp-app /deep/ paper-radio-group > * {
+    display: block; }
+  yp-app /deep/ paper-radio-group span {
+    color: #727272;
+    font-size: 13px;
+    margin: -18px 30px 0 30px; }
+yp-app /deep/ #form-title {
+  display: inline; }
+yp-app /deep/ .divider {
+  border-right: solid 1px #DADADA;
+  margin-right: 15px;
+  padding-right: 15px; }
+
+yp-app /deep/ #file-tree {
+  color: white;
+  font-size: 13px; }
+  yp-app /deep/ #file-tree .core-selected {
+    background-color: #F50057; }
+
+body {
+  font-family: RobotoDraft, sans-serif;
+  color: #212121;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none; }
+
+yp-app /deep/ {
+  color: #212121; }
+  yp-app /deep/ h1 {
+    font-weight: normal;
+    font-size: 24px;
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+    margin-bottom: 7px;
+    display: inline; }
+  yp-app /deep/ a {
+    color: #F50057;
+    text-decoration: none; }
+  yp-app /deep/ a:hover {
+    text-decoration: underline; }
+  yp-app /deep/ core-toolbar {
+    background-color: #A1887F;
+    color: white; }
+    yp-app /deep/ core-toolbar a {
+      color: white; }
+  yp-app /deep/ core-header-panel {
+    background-color: #BCAAA4; }
+  yp-app /deep/ paper-button {
+    color: #F50057;
+    font-size: 14px; }
+  yp-app /deep/ paper-fab {
+    background-color: #F50057; }
+  yp-app /deep/ paper-checkbox::shadow #checkbox.checked {
+    background-color: #F50057;
+    border-color: #F50057; }
+  yp-app /deep/ paper-checkbox::shadow #ink[checked] {
+    color: #ffc2d8; }
+  yp-app /deep/ paper-radio-button::shadow #ink[checked] {
+    color: #ffc2d8; }
+  yp-app /deep/ paper-radio-button::shadow #onRadio {
+    background-color: #F50057; }
+  yp-app /deep/ paper-radio-button::shadow #offRadio {
+    border-color: #F50057; }
+  yp-app /deep/ .colored {
+    background-color: #F50057;
+    color: white; }
+  yp-app /deep/ paper-button /deep/ a {
+    text-decoration: none;
+    color: white; }
+  yp-app /deep/ #profilebut {
+    margin-top: 4px; }
+    yp-app /deep/ #profilebut /deep/ core-icon {
+      height: 38px;
+      width: 38px; }
+      yp-app /deep/ #profilebut /deep/ core-icon > div {
+        border-radius: 18px; }
+  yp-app /deep/ #profilemenubut {
+    color: #212121; }
+  yp-app /deep/ .menuItem /deep/ paper-ripple {
+    color: white; }
+  yp-app /deep/ .menuItem /deep/ a {
+    color: #212121;
+    padding: 0.9em 1em; }
+    yp-app /deep/ .menuItem /deep/ a .button-content {
+      padding: 0; }
+  yp-app /deep/ #main-menu /deep/ core-icon {
+    margin-right: 15px; }
+  yp-app /deep/ #nameHeader {
+    text-align: center; }
+  yp-app /deep/ hr {
+    height: 1px;
+    background-color: #DADADA;
+    border: none;
+    margin: 0; }
+  yp-app /deep/ .SigninItem {
+    background-color: #F50057;
+    font-weight: bold;
+    color: white;
+    margin: 10px 0;
+    font-size: 14px; }
+    yp-app /deep/ .SigninItem > img {
+      width: 32px;
+      padding-right: 10px; }
+  yp-app /deep/ #main-menu .core-selected {
+    background-color: #A1887F;
+    color: white;
+    font-weight: bold; }
+    yp-app /deep/ #main-menu .core-selected /deep/ a {
+      color: white; }
+  yp-app /deep/ #signin-header-but {
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 0 6px; }
+    yp-app /deep/ #signin-header-but > img {
+      width: 22px;
+      padding-right: 7px;
+      border-right: solid 1px white;
+      margin-right: 15px; }
+
+/*# sourceMappingURL=main.css.map */

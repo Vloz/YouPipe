@@ -1,0 +1,138 @@
+$font-stack: RobotoDraft, sans-serif
+$mid: #A1887F
+$light: #BCAAA4
+$black: #212121
+$accent: #F50057
+$secondary:#727272
+$divider:#DADADA
+@import "list"
+@import "pipe"
+@import "editor"
+
+body
+  font-family: $font-stack
+  color: $black
+  user-select: none
+  -webkit-tap-highlight-color: rgba(0,0,0,0)
+  -webkit-touch-callout: none
+
+yp-app /deep/
+  color: $black
+  h1
+    font-weight: normal
+    font-size: 24px
+    -webkit-margin-before: 0px
+    -webkit-margin-after: 0px
+    margin-bottom: 7px
+    display: inline
+  a
+    color: $accent
+    text-decoration: none
+  a:hover
+    text-decoration: underline
+  core-toolbar
+    background-color: $mid
+    color: white
+    a
+      color: white
+
+  core-header-panel
+    background-color: $light
+
+
+  paper-button
+    color: $accent
+    font-size: 14px
+
+  paper-fab
+    background-color: $accent
+
+  paper-checkbox::shadow
+    #checkbox.checked
+      background-color: $accent
+      border-color: $accent
+    #ink[checked]
+      color: lighten($accent, 40%)
+
+  paper-radio-button::shadow
+    #ink[checked]
+      color: lighten($accent, 40%)
+    #onRadio
+      background-color: $accent
+    #offRadio
+      border-color: $accent
+
+  .colored
+    background-color: $accent
+    color: white
+
+  paper-button /deep/ a
+    text-decoration: none
+    color: white
+
+  #profilebut
+    margin-top: 4px
+    /deep/ core-icon
+      height: 38px
+      width: 38px
+      > div
+        border-radius: 18px
+
+  #profilemenubut
+    color: $black
+
+  .menuItem /deep/ paper-ripple
+    color: white
+  .menuItem /deep/ a
+    color: $black
+    padding: 0.9em 1em
+    .button-content
+      padding: 0
+
+  #main-menu /deep/ core-icon
+    margin-right: 15px
+
+  #nameHeader
+    text-align: center
+
+  hr
+    height: 1px
+    background-color: $divider
+    border: none
+    margin: 0
+
+  .SigninItem
+    background-color: $accent
+    font-weight: bold
+    color: white
+    margin: 10px 0
+    font-size: 14px
+    > img
+      width: 32px
+      padding-right: 10px
+
+  #main-menu .core-selected
+    background-color: $mid
+    color: white
+    font-weight: bold
+
+    /deep/ a
+      color: white
+  #signin-header-but
+    color: white
+    font-size: 12px
+    font-weight: bold
+    padding: 0 6px
+    > img
+      width: 22px
+      padding-right: 7px
+      border-right: solid 1px white
+      margin-right: 15px
+
+
+
+
+
+
+
+
